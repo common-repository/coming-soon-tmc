@@ -1,0 +1,86 @@
+/*	==================================
+	TEMPLATES CHOOSER
+	----------------------------------	*/
+
+.cs-tmc-templates-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.tile {
+
+		&:hover .preview {
+			opacity: 1;
+		}
+
+		> input {
+		display:none;
+
+			&:checked ~ label {
+				box-shadow: 0 0 0 2px $flat-red-1;
+			}
+
+			&:checked ~ label .preview,
+			.cs-tmc-templates-wrapper .tile .tile:hover .preview {
+				opacity: 1;
+			}
+
+			&:checked ~ label .actions {
+				display: block;
+			}
+
+		}
+
+		> label {
+			box-shadow: 0 0 0 1px silver;
+			cursor: pointer;
+			overflow: hidden;
+			display: flex !important;
+			flex-direction: column;
+			max-width: 100%;
+			width: 300px;
+			height: 250px;
+			margin: 10px;
+			background: #ecf0f1;
+			border-radius: 3px;
+
+			.preview {
+				flex-basis: 100%;
+				float: none;
+				opacity: 0.8;
+				width: 100%;
+				background-size: cover;
+				background-position: center;
+			}
+
+			.actions {
+
+				padding: 8px;
+				width: 100%;
+				background: $flat-red-1;
+				display: none;
+
+				a.get-it {
+
+					color: white;
+					text-shadow: 1px 1px 1px #232323;
+					text-decoration: none;
+					box-shadow: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

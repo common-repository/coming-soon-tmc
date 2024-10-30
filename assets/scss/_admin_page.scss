@@ -1,0 +1,103 @@
+/*	==================================
+	Admin Page
+	----------------------------------	*/
+
+.wp-core-ui {
+
+	.cs-tmc-before-page-box {
+
+		position: absolute;
+	    right: 0;
+	    top: 0;
+
+		.logo {
+			
+			display: inline-block;
+			margin: 2em;
+
+			img {
+				max-width: 100px;
+				height: auto;
+			}
+
+		}
+
+	}
+
+	.cs-tmc-in-page-tab {
+
+		margin-top: 4em;
+
+	}
+
+	.cs-tmc-container {
+
+		.submit-box {
+
+			float: right;
+			clear: both;
+
+		}
+
+	}
+
+	.cs-tmc-sctionsets {
+
+		margin: 2em 0 0;
+
+	}
+
+	.cs-tmc-sectionset {
+
+		margin: 0;
+		border-right: 1px solid #ccc;
+
+		&:last-of-type {
+
+			border-bottom: 1px solid #ccc;
+
+		}
+
+		.cs-tmc-section {
+
+			margin: 0;
+
+			.cs-tmc-section-table {
+
+				.cs-tmc-section-caption {
+
+					border-top: 1px solid #ccc;
+					padding-left: 1rem;
+
+				}
+
+				.cs-tmc-fieldrow {
+
+					border-top: 1px solid #ccc;
+
+					> th {
+
+						border-right: 1px solid #ccc;
+						padding-left: 1rem;
+
+					}
+
+					.cs-tmc-fields-description {
+
+						display: inline-block;
+						background-color: #e9edf1;
+						border-left: 1px solid #3183bd;
+						padding: 0.8em 1.2em;
+						margin-top: 1em;
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
